@@ -58,7 +58,7 @@ class Net(nn.Module):
     def __init__(self):
         super().__init__()
         ###############Defining layers################
-        self.fc1 = nn.Linear(28*28, 64) #fc1 means fully connected layer 1. Proving input and output
+        self.fc1 = nn.Linear(28*28, 64) #fc1 means fully connected layer 1. Proving input (img size) and output (number of neurons)
         self.fc2 = nn.Linear(64, 64)
         self.fc3 = nn.Linear(64, 64)
         self.fc4 = nn.Linear(64, 10) #output layer
